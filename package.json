@@ -1,7 +1,7 @@
 {
   "name": "ember-property-computed",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "0.0.1",
+  "description": "Provide an alternative to Ember.computed that provides the (function, keys) order of the .property() prototype extension",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -11,11 +11,11 @@
     "build": "ember build",
     "test": "ember try:testall"
   },
-  "repository": "",
+  "repository": "https://github.com/pgengler/ember-property-computed.git",
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "Phil Gengler <phil@pgengler.net> (http://pgengler.net)",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.0.2",
