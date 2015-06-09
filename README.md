@@ -4,7 +4,7 @@ This is an ember-cli addon that provides an alternative way of defining computed
 
 ## Installation
 ```
-ember install:addon ember-property-computed
+ember install ember-property-computed
 ```
 
 ## Usage
