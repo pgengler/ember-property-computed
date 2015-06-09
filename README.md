@@ -1,4 +1,4 @@
-# ember-property-computed
+# ember-property-computed [![Build Status](https://travis-ci.org/pgengler/ember-property-computed.svg?branch=master)](https://travis-ci.org/pgengler/ember-property-computed)
 
 This is an ember-cli addon that provides an alternative way of defining computed properties. It works just like `Ember.computed` except that it takes the function as the first argument, not the last. (This is the same order that's used when defining computed properties using the `.property` prototype extension.)
 
