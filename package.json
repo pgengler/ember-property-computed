@@ -1,6 +1,6 @@
 {
   "name": "ember-property-computed",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Provide an alternative to Ember.computed that provides the (function, keys) order of the .property() prototype extension",
   "directories": {
     "doc": "doc",
