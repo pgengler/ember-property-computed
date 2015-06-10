@@ -13,21 +13,14 @@ import Ember from 'ember';
 import cp from 'ember-property-computed';
 
 // Define an object with a computed property
-var ObjectWithComputedProperty = Ember.Object.extend({
-	aProperty: '',
-
-	anAlias: cp(function() {
-		console.log("computed property function called");
-		return this.get('aProperty');
-	}, 'aProperty')
+export default Ember.Object.extend({
+	firstName: 'John',
+  lastName: 'Doe',
+	fullName: cp(function() {
+		return this.get('firstName') + ' ' + this.get('lastName');
+	}, 'firstName', 'lastName') 
+	//Keeps dependent keys at the end but is compatible with prototype extensions being disabled. 
 });
-
-var instance = ObjectWithComputedProperty.create();
-instance.set('aProperty', 'newValue');
-console.log(instance.get('anAlias'));
-// two lines of output to the console:
-// "computed property function called"
-// "newValue"
 ```
 
 ## Development
