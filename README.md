@@ -14,12 +14,12 @@ import cp from 'ember-property-computed';
 
 // Define an object with a computed property
 export default Ember.Object.extend({
-	firstName: 'John',
+  firstName: 'John',
   lastName: 'Doe',
-	fullName: cp(function() {
-		return this.get('firstName') + ' ' + this.get('lastName');
-	}, 'firstName', 'lastName') 
-	//Keeps dependent keys at the end but is compatible with prototype extensions being disabled. 
+  fullName: cp(function() {
+    return this.get('firstName') + ' ' + this.get('lastName');
+  }, 'firstName', 'lastName') 
+  // Keeps dependent keys at the end but is compatible with prototype extensions being disabled. 
 });
 ```
 
